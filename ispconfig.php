@@ -940,12 +940,12 @@ class Ispconfig extends Module {
 			array(
 				'key' => "ispconfig_domain",
 				'value' =>  $params['domain'],
-				'encrypted' => 1
+				'encrypted' => 0
 			),
 			array(
 				'key' => "ispconfig_existing_domain",
 				'value' =>  $vars['ispconfig_existing_domain'],
-				'encrypted' => 1
+				'encrypted' => 0
 			)
 		);
 	}
