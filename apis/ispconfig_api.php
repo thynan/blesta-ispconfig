@@ -113,6 +113,7 @@ class IspconfigApi {
         $this->soap_client = new SoapClient(null, array('location' => $soap_location,
             'uri'      => $soap_uri,
             'trace' => 1,
+	    'stream_context'=> stream_context_create(array('ssl'=> array('verify_peer'=>false,'verify_peer_name'=>false))),
             'exceptions' => 1));
     }
 
